@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Directorio de Profesionales</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
       --primary: #2563eb;
@@ -21,43 +19,51 @@
       --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
       --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
     }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Inter', sans-serif;
       background-color: var(--background);
       color: var(--text);
       line-height: 1.5;
     }
+
     header {
       background-color: var(--white);
       box-shadow: var(--shadow);
       padding: 1rem;
       text-align: center;
     }
+
     header h1 {
       color: var(--primary);
       font-size: 1.75rem;
     }
+
     .intro-section {
       max-width: 800px;
       margin: 2rem auto;
       text-align: center;
       padding: 0 1rem;
     }
+
     .intro-section h2 {
       font-size: 1.5rem;
       color: var(--primary-dark);
       margin-bottom: 1rem;
     }
+
     .intro-section p {
       color: var(--secondary);
       margin-bottom: 1rem;
       font-size: 1.1rem;
     }
+
     .professionals-grid {
       max-width: 1200px;
       margin: 2rem auto;
@@ -66,6 +72,7 @@
       gap: 2rem;
       padding: 0 1rem;
     }
+
     .professional-card {
       background-color: var(--white);
       border-radius: 0.5rem;
@@ -75,32 +82,38 @@
       display: flex;
       flex-direction: column;
     }
+
     .professional-card:hover {
       transform: translateY(-5px);
       box-shadow: var(--shadow-lg);
     }
+
     .professional-image {
       width: 100%;
       height: 160px;
       object-fit: cover;
     }
+
     .professional-content {
       padding: 1rem;
       display: flex;
       flex-direction: column;
       flex: 1;
     }
+
     .professional-title {
       font-size: 1.25rem;
       color: var(--primary);
       margin-bottom: 0.5rem;
       font-weight: 600;
     }
+
     .professional-description {
       color: var(--secondary);
       margin-bottom: 1rem;
       flex: 1;
     }
+
     .professional-button {
       background-color: var(--primary);
       color: var(--white);
@@ -113,9 +126,11 @@
       text-align: center;
       transition: background-color 0.3s ease;
     }
+
     .professional-button:hover {
       background-color: var(--primary-dark);
     }
+
     footer {
       text-align: center;
       padding: 1.5rem;
@@ -123,14 +138,17 @@
       color: var(--white);
       margin-top: 2rem;
     }
+
     @media (max-width: 768px) {
       header h1 {
         font-size: 1.4rem;
       }
+
       .intro-section h2 {
         font-size: 1.3rem;
       }
     }
+
     /* Estilos para el botón de volver */
     .back-button-container {
       text-align: center;
@@ -138,6 +156,7 @@
       max-width: 1200px;
       padding: 0 1rem;
     }
+
     .back-button {
       display: inline-block;
       background-color: var(--accent);
@@ -153,21 +172,26 @@
       transition: background-color 0.3s ease, transform 0.2s ease;
       box-shadow: var(--shadow);
     }
+
     .back-button:hover {
       background-color: #e68a00;
       transform: translateY(-2px);
     }
+
     .back-button {
-        /* Mantener los estilos actuales */
-        margin-top: 1rem; /* Añadir separación */
+      /* Mantener los estilos actuales */
+      margin-top: 1rem;
+      /* Añadir separación */
     }
 
     .back-button::before {
-        content: "←"; /* Agregar flecha */
-        margin-right: 0.5rem;
+      content: "←";
+      /* Agregar flecha */
+      margin-right: 0.5rem;
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -192,15 +216,13 @@
   <section class="professionals-grid">
     <!-- Tarjeta #1 -->
     <div class="professional-card">
-      <img
-        src="watsonpropiedades..jpg"
-        alt="Estudio Jurídico Pérez"
-        class="professional-image"
-      />
+      <img src="watsonpropiedades..jpg" alt="Estudio Jurídico Pérez" class="professional-image" />
       <div class="professional-content">
         <h3 class="professional-title">Watson Propiedades</h3>
         <p class="professional-description">
-          En Watson Propiedades somos tu aliado para encontrar la propiedad ideal. Ofrecemos asesoramiento integral en compra, venta y alquiler de inmuebles, respaldados por años de experiencia y un compromiso absoluto con la transparencia y la satisfacción de nuestros clientes.
+          En Watson Propiedades somos tu aliado para encontrar la propiedad ideal. Ofrecemos asesoramiento integral en
+          compra, venta y alquiler de inmuebles, respaldados por años de experiencia y un compromiso absoluto con la
+          transparencia y la satisfacción de nuestros clientes.
         </p>
         <a href="https://watsonpropiedades.com/" class="professional-button">
           Visitar Sitio
@@ -208,18 +230,31 @@
       </div>
     </div>
 
+    <!-- Tarjeta #2 -->
+    <div class="professional-card">
+      <img src="Foto de Ignacio.jpg" alt="Ignacio Fernández - Seguros" class="professional-image" />
+      <div class="professional-content">
+        <h3 class="professional-title">Ignacio Fernández - Seguros</h3>
+        <p class="professional-description">
+          Asesoría integral en seguros para autos, hogar, vida, salud, agrícolas y más. Productor asesor matriculado con
+          las mejores compañías del mercado y atención personalizada 24/7.
+        </p>
+        <a href="https://estev1000.github.io/Ignacio-Fernandez-Productor-Asesor-de-Seguros/"
+          class="professional-button">
+          Visitar Sitio
+        </a>
+      </div>
+    </div>
+
+
 
     <!-- Tarjeta #1 -->
     <div class="professional-card">
-      <img
-        src="Imagen de Abogados.png"
-        alt="Estudio Jurídico Pérez"
-        class="professional-image"
-      />
+      <img src="Imagen de Abogados.png" alt="Estudio Jurídico Pérez" class="professional-image" />
       <div class="professional-content">
         <h3 class="professional-title">Estudio Jurídico Pérez</h3>
         <p class="professional-description">
-          ¡Esta web se alquila para abogados! Especialistas en Derecho Civil y Comercial, 
+          ¡Esta web se alquila para abogados! Especialistas en Derecho Civil y Comercial,
           con amplia experiencia en litigios y asesoría a empresas familiares.
         </p>
         <a href="https://wold-marketplaces.github.io/Abogados-demo/" class="professional-button">
@@ -230,15 +265,11 @@
 
     <!-- Tarjeta #1 -->
     <div class="professional-card">
-      <img
-        src="imagen de tramitesauto.png"
-        alt="TrámitesAuto"
-        class="professional-image"
-      />
+      <img src="imagen de tramitesauto.png" alt="TrámitesAuto" class="professional-image" />
       <div class="professional-content">
         <h3 class="professional-title">TrámitesAuto</h3>
         <p class="professional-description">
-          Este sitio web de trámites automotores está a la venta/alquiler. 
+          Este sitio web de trámites automotores está a la venta/alquiler.
           Ideal para profesionales del sector o empresas que deseen expandir su presencia online.
         </p>
         <a href="https://wold-marketplaces.github.io/TramitesAuto/" class="professional-button">
@@ -249,15 +280,12 @@
 
     <!-- Tarjeta #1 -->
     <div class="professional-card">
-      <img
-        src="https://images.pexels.com/photos/7841853/pexels-photo-7841853.jpeg?auto=compress&cs=tinysrgb&w=800"
-        alt="Estudio Jurídico Díaz"
-        class="professional-image"
-      />
+      <img src="https://images.pexels.com/photos/7841853/pexels-photo-7841853.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Estudio Jurídico Díaz" class="professional-image" />
       <div class="professional-content">
         <h3 class="professional-title">Estudio Jurídico Díaz</h3>
         <p class="professional-description">
-          Especialistas en Derecho Civil y Comercial, con amplia experiencia 
+          Especialistas en Derecho Civil y Comercial, con amplia experiencia
           en litigios y asesoría a empresas familiares.
         </p>
         <a href="https://example.com/estudio-diaz" class="professional-button">
@@ -268,15 +296,12 @@
 
     <!-- Tarjeta #2 -->
     <div class="professional-card">
-      <img
-        src="https://images.pexels.com/photos/4430783/pexels-photo-4430783.jpeg?auto=compress&cs=tinysrgb&w=800"
-        alt="Martilleros Asociados"
-        class="professional-image"
-      />
+      <img src="https://images.pexels.com/photos/4430783/pexels-photo-4430783.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Martilleros Asociados" class="professional-image" />
       <div class="professional-content">
         <h3 class="professional-title">Martilleros Asociados</h3>
         <p class="professional-description">
-          Servicios de tasación, subastas, remates. Equipo certificado y 
+          Servicios de tasación, subastas, remates. Equipo certificado y
           con presencia en todo el país.
         </p>
         <a href="https://example.com/martilleros-asociados" class="professional-button">
@@ -287,11 +312,8 @@
 
     <!-- Tarjeta #3 -->
     <div class="professional-card">
-      <img
-        src="https://images.pexels.com/photos/8112193/pexels-photo-8112193.jpeg?auto=compress&cs=tinysrgb&w=800"
-        alt="Estudio Notarial López & Asociados"
-        class="professional-image"
-      />
+      <img src="https://images.pexels.com/photos/8112193/pexels-photo-8112193.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Estudio Notarial López & Asociados" class="professional-image" />
       <div class="professional-content">
         <h3 class="professional-title">Estudio Notarial López & Asociados</h3>
         <p class="professional-description">
@@ -306,11 +328,8 @@
 
     <!-- Tarjeta #4 -->
     <div class="professional-card">
-      <img
-        src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800"
-        alt="Registro del Automotor Nº 15"
-        class="professional-image"
-      />
+      <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Registro del Automotor Nº 15" class="professional-image" />
       <div class="professional-content">
         <h3 class="professional-title">Registro del Automotor Nº 15</h3>
         <p class="professional-description">
@@ -325,15 +344,12 @@
 
     <!-- Tarjeta #5 -->
     <div class="professional-card">
-      <img
-        src="https://images.pexels.com/photos/6077826/pexels-photo-6077826.jpeg?auto=compress&cs=tinysrgb&w=800"
-        alt="Poder Judicial Abogados"
-        class="professional-image"
-      />
+      <img src="https://images.pexels.com/photos/6077826/pexels-photo-6077826.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Poder Judicial Abogados" class="professional-image" />
       <div class="professional-content">
         <h3 class="professional-title">Poder Judicial Abogados</h3>
         <p class="professional-description">
-          Representación legal frente a instancias judiciales y asesoría 
+          Representación legal frente a instancias judiciales y asesoría
           especializada en Derecho Penal y Laboral.
         </p>
         <a href="https://example.com/poder-abogados" class="professional-button">
@@ -344,11 +360,8 @@
 
     <!-- Tarjeta #6 -->
     <div class="professional-card">
-      <img
-        src="https://images.pexels.com/photos/3184633/pexels-photo-3184633.jpeg?auto=compress&cs=tinysrgb&w=800"
-        alt="Consultora Legal Integral"
-        class="professional-image"
-      />
+      <img src="https://images.pexels.com/photos/3184633/pexels-photo-3184633.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Consultora Legal Integral" class="professional-image" />
       <div class="professional-content">
         <h3 class="professional-title">Consultora Legal Integral</h3>
         <p class="professional-description">
@@ -366,5 +379,6 @@
     <p>&copy; 2025 - Directorio de Profesionales. Todos los derechos reservados.</p>
   </footer>
 </body>
+
 </html>
 </qodoArtifact>
